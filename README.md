@@ -12,6 +12,8 @@ Retuns the object's type.
 ```javascript
 u.getType(1.5); //=> Number
 u.getType('hi'); //=> String
+u.getType(alert); //=> Function
+...
 ```
 
 #### isObject(obj)
