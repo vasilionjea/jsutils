@@ -25,7 +25,7 @@ u.isFunction(alert);
 u.isString('lorem ipsum');
 u.isNumber(123);
 u.isDate(new Date);
-
+```
 
 ### functions(obj)
 Returns an object's functions/methods.
