@@ -62,7 +62,7 @@ u.functions({
 //=> [ 'fullName', 'greet' ]
 ```
 
-#### mixin
+#### mixin(obj)
 Add custom functions to the `u` namespace.
 
 ```javascript
