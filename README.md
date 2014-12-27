@@ -8,23 +8,39 @@ Top level utilities.
 
 ### getType(obj)
 Retuns the object's type.
+```javascript
+u.getType(1.5); // Number
+u.getType('hi'); // String
+```
 
 ### isObject(obj)
-### isArray(obj)
-### isFunction(obj)
-### isString(obj)
-### isNumber(obj)
-### isDate(obj)
-All the _isSomething_ helpers return the internall **[[Class]]** of an object.
-
 ```javascript
-// The following all return `true`
-u.isObject({text: 'lorem ipsum'});
-u.isArray([1,2,3]);
-u.isFunction(alert);
-u.isString('lorem ipsum');
-u.isNumber(123);
-u.isDate(new Date);
+u.isObject({text: 'lorem ipsum'}); // true
+```
+
+### isArray(obj)
+```javascript
+u.isArray([1,2,3]); // true
+```
+
+### isFunction(obj)
+```javascript
+u.isFunction(alert); // true
+```
+
+### isString(obj)
+```javascript
+u.isString('lorem ipsum'); // true
+```
+
+### isNumber(obj)
+```javascript
+u.isNumber(123); // true
+```
+
+### isDate(obj)
+```javascript
+u.isDate(new Date); // true
 ```
 
 ### functions(obj)
