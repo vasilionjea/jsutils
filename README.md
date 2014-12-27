@@ -1,7 +1,7 @@
 JS Utils
 =========
 
-<blockquote>Various JS utilities (_work in progress_).</blockquote>
+<blockquote>Various JS utilities (<i>work in progress</i>).</blockquote>
 
 ## Core
 
