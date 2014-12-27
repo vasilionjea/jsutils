@@ -1,7 +1,7 @@
 JS Utils
 =========
 
-Various JS utilities (_work in progress_).
+<blockquote>Various JS utilities (_work in progress_).</blockquote>
 
 ## Core
 
@@ -69,6 +69,43 @@ u.functions({
 
 ## String
 String utilities live under the `u.string` namespace.
+
+#### stripTags(str)
+```javascript
+u.string.stripTags("Hello <script>alert('world')</script>");
+
+// Result:
+//=> "Hello alert('world')"
+```
+
+#### repeat(str, times)
+```javascript
+u.string.repeat('hello!', 3); //=> 'hello!hello!hello!'
+```
+
+#### format(str, data)
+Using a data object:
+```javascript
+u.string.format("Hello, my name is ${fullName} and I'm ${age} years old.", {
+  firstName: 'John',
+  lastName: 'Smith',
+  age: 28,
+  fullName: function() {
+    return this.firstName + ' ' + this.lastName;
+  }
+});
+
+// Result:
+//=> "Hello, my name is John Smith and I'm 28 years old."
+```
+
+Using a data array:
+```javascript
+u.string.format("Hello, my name is ${0} and I'm ${1} years old.", ['Jane', 40]);
+
+// Result:
+//=> "Hello, my name is Jane and I'm 40 years old."
+```
 
 
 
