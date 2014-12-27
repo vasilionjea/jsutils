@@ -1,4 +1,5 @@
 ;(function() {
+  "use strict";
 
   // String utils
   var _string = {

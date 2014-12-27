@@ -1,5 +1,6 @@
 ;(function() {
-
+  "use strict";
+  
   // Number utils
   var _number = {
     /**

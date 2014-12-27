@@ -1,4 +1,5 @@
 ;(function() {
+  "use strict";
   
   // Date utils
   var _date = {

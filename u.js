@@ -1,4 +1,6 @@
 ;(function() {
+  "use strict";
+
   var root = this;
   var toString = Object.prototype.toString;
 
@@ -35,6 +37,14 @@
     }.bind(this));
   };
 
-  // Export
-  root.u = u;
+  // Export NodeJS & Browser
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = u;
+    }
+
+    exports.u = u;
+  } else {
+    root.u = u;
+  }
 }.call(this));
