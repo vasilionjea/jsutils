@@ -6,47 +6,47 @@ Personal JS utilities.
 ## Core
 Top level utilities.
 
-### getType(obj)
+#### getType(obj)
 Retuns the object's type.
 ```javascript
 u.getType(1.5); // Number
 u.getType('hi'); // String
 ```
 
-### isObject(obj)
+#### isObject(obj)
 ```javascript
 u.isObject({text: 'lorem ipsum'}); // true
 ```
 
-### isArray(obj)
+#### isArray(obj)
 ```javascript
 u.isArray([1,2,3]); // true
 ```
 
-### isFunction(obj)
+#### isFunction(obj)
 ```javascript
 u.isFunction(alert); // true
 ```
 
-### isString(obj)
+#### isString(obj)
 ```javascript
 u.isString('lorem ipsum'); // true
 ```
 
-### isNumber(obj)
+#### isNumber(obj)
 ```javascript
 u.isNumber(123); // true
 ```
 
-### isDate(obj)
+#### isDate(obj)
 ```javascript
 u.isDate(new Date); // true
 ```
 
-### functions(obj)
+#### functions(obj)
 Returns an object's functions/methods.
 
-### mixin
+#### mixin
 Add custom functions to the `u` namespace.
 
 
