@@ -4,18 +4,18 @@ JS Utils
 ## Core
 Top level utilities.
 
-### u.getType(obj)
+### getType(obj)
 Retuns the object's type.
 
-### u.isObject(obj)
-### u.isArray(obj)
-### u.isFunction(obj)
-### u.isString(obj)
-### u.isNumber(obj)
-### u.isDate(obj)
+### isObject(obj)
+### isArray(obj)
+### isFunction(obj)
+### isString(obj)
+### isNumber(obj)
+### isDate(obj)
 All the "isSomething" helpers return the internall **[[Class]]** of an object.
 
-### u.functions(obj)
+### functions(obj)
 Returns an object's functions/methods.
 
 
