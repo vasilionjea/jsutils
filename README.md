@@ -57,10 +57,10 @@ u.functions({
   greet: function() {
     return 'Hi there!';
   }
-
-  // Result:
-  //=> [ 'fullName', 'greet' ]
 });
+
+// Result:
+//=> [ 'fullName', 'greet' ]
 ```
 
 #### mixin
