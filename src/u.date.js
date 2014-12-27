@@ -1,5 +1,7 @@
 ;(function() {
   "use strict";
+
+  var root = this;
   
   // Date utils
   var _date = {
@@ -33,6 +35,15 @@
     }
   };
 
-  this.u.mixin(_date);
+  // Export NodeJS & Browser
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = _date;
+    }
+        
+    exports = _date;
+  } else {
+    root.u.date = _date;
+  }
 
 }.call(this));

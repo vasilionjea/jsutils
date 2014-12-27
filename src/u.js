@@ -5,13 +5,11 @@
   var toString = Object.prototype.toString;
 
   // The `u` object
-  var u = function() { return u; };
-
+  var u = {};
 
   u.getType = function(obj) {
     return toString.call(obj).slice(8, -1);
   };
-
 
   // Type checker functions: `u.isObject(obj)`, `u.isArray(obj)`, etc.
   ['Object', 'Array', 'Function', 'String', 'Number', 'Date'].forEach(function(type) {
@@ -22,18 +20,9 @@
     };
   }.bind(u));
 
-
   u.functions = function(obj) {
     return Object.keys(obj).filter(function(key) {
       return this.isFunction(obj[key]);
-    }.bind(this));
-  };
-
-
-  // Add custom functions to `u`
-  u.mixin = function(obj) {
-    this.functions(obj).forEach(function(name) {
-      this[name] = obj[name];
     }.bind(this));
   };
 
@@ -43,7 +32,7 @@
       exports = module.exports = u;
     }
 
-    exports.u = u;
+    exports = u;
   } else {
     root.u = u;
   }

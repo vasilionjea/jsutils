@@ -1,5 +1,7 @@
 ;(function() {
   "use strict";
+
+  var root = this;
   
   // Number utils
   var _number = {
@@ -42,6 +44,15 @@
     }
   };
 
-  this.u.mixin(_number);
+  // Export NodeJS & Browser
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = _number;
+    }
+    
+    exports = _number;
+  } else {
+    root.u.number = _number;
+  }
 
 }.call(this));

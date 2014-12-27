@@ -1,9 +1,11 @@
 JS Utils
 =========
 
-Personal JS utilities (_work in progress_).
+Various JS utilities (_work in progress_).
 
 ## Core
+
+Core utilities live under the `u` namespace.
 
 #### getType(obj)
 Retuns the object's type.
@@ -62,35 +64,22 @@ u.functions({
 //=> [ 'fullName', 'greet' ]
 ```
 
-#### mixin(obj)
-Add custom functions to the `u` namespace.
-
-```javascript
-// Add a greeting utility
-u.mixin({
-  greet: function() {
-    return 'Hi! The day today is: ' + this.getDayName(); // `this` here is the `u` object
-  }
-});
-
-// Now use it
-u.greet(); //=> 'Hi! The day today is: Friday'
-```
-
 
 
 
 ## String
-_..._
+String utilities live under the `u.string` namespace.
 
 
 
 
 ## Number
-_..._
+Number utilities live under the `u.number` namespace.
 
 
 
 
 ## Date
-_..._
+Date utilities live under the `u.date` namespace.
+
+

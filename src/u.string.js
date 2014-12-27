@@ -1,6 +1,8 @@
 ;(function() {
   "use strict";
 
+  var root = this;
+
   // String utils
   var _string = {
     /**
@@ -31,6 +33,15 @@
     }
   };
 
-  this.u.mixin(_string);
+  // Export NodeJS & Browser
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = _string;
+    }
+    
+    exports = _string;
+  } else {
+    root.u.string = _string;
+  }
 
 }.call(this));

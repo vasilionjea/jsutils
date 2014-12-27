@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Browser playground</title>
+</head>
+<body>
+  <h1 style="text-align:center">
+    <em>Check you console...</em> 
+  </h1>
+
+  <pre style="text-align:center;font-size:16px">console.log(u);</pre>
+  
+  <script src="src/u.js"></script>
+  <script src="src/u.string.js"></script>
+  <script src="src/u.number.js"></script>
+  <script src="src/u.date.js"></script>
+  <script>
+    console.log('Here is the `u` object: ');
+    console.log(u);
+    
+    console.log("\nExample:\nu.string.repeat('hello!', 3)");
+    console.log('//=> ', u.string.repeat('hello!', 3));
+  </script>
+</body>
+</html>
