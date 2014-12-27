@@ -4,7 +4,6 @@ JS Utils
 Personal JS utilities.
 
 ## Core
-Top level utilities.
 
 #### getType(obj)
 Retuns the object's type.
