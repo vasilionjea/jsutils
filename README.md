@@ -1,7 +1,7 @@
 JS Utils
 =========
 
-Personal JS utilities.
+Personal JS utilities (_work in progress_).
 
 ## Core
 
