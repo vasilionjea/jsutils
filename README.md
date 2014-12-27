@@ -66,6 +66,18 @@ u.functions({
 #### mixin
 Add custom functions to the `u` namespace.
 
+```javascript
+// Add a greeting utility
+u.mixin({
+  greet: function() {
+    return 'Hi! The day today is: ' + this.getDayName(); // `this` here is the `u` object
+  }
+});
+
+// Now use it
+u.greet(); //=> 'Hi! The day today is: Friday'
+```
+
 
 
 
