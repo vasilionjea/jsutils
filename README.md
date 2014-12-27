@@ -19,13 +19,13 @@ All the "isSomething" helpers return the internall **[[Class]]** of an object.
 
 ```javascript
 // The following all return `true`
-
 u.isObject({text: 'lorem ipsum'});
 u.isArray([1,2,3]);
 u.isFunction(alert);
 u.isString('lorem ipsum');
 u.isNumber(123);
 u.isDate(new Date);
+
 
 ### functions(obj)
 Returns an object's functions/methods.
