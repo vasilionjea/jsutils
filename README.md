@@ -15,7 +15,7 @@ Retuns the object's type.
 ### isString(obj)
 ### isNumber(obj)
 ### isDate(obj)
-All the "isSomething" helpers return the internall **[[Class]]** of an object.
+All the _isSomething_ helpers return the internall **[[Class]]** of an object.
 
 ```javascript
 // The following all return `true`
