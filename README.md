@@ -66,7 +66,7 @@ u.functions({
 //=> [ 'fullName', 'greet' ]
 ```
 
-#### extend(target, [, source1] [, sourceN])
+#### extend(target [, source1] [, sourceN])
 Copies all properties (_shallow_) from source(s) over to the target object if the target doesn't already contain those properties.
 ```javascript
 var note = {title: 'Untitled', body: 'lorem ipsum dolor...'};
