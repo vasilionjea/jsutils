@@ -66,6 +66,16 @@ u.functions({
 //=> [ 'fullName', 'greet' ]
 ```
 
+#### extend(target, [, source1] [, sourceN])
+Copies all properties (_shallow_) from source(s) over to the target object if the target doesn't already contain those properties.
+```javascript
+var note = {title: 'Untitled', body: 'lorem ipsum dolor...'};
+u.extend(note, {views: 1132, user: 'joe'}, {date: (new Date).toString(), completed: false});
+
+console.log(noted);
+//=> {title: "Untitled", body: "lorem ipsum dolor...", views: 1132, user: "joe", date: "Mon Feb 09 2015 16:50:46 GMT-0500 (EST)"…}
+```
+
 
 
 
