@@ -79,6 +79,31 @@ console.log(noted);
 
 
 
+## PubSub
+The PubSub utilities live under the `u.pubsub` namespace. They should be mixed in another object via the `u.extend` helper.
+
+```javascript
+var app = {
+  setTitle: function(str) {
+    document.title = str || 'Welcome home!';
+  }
+};
+
+// Mixin the pubsub helpers
+u.extend(app, u.pubsub);
+
+// Subscribe to events
+app.on('start', app.setTitle);
+
+// 2 seconds later the document title changes
+setTimeout(function() {
+  app.trigger('start');
+}, 2000);
+```
+
+
+
+
 ## String
 String utilities live under the `u.string` namespace.
 
